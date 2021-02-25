@@ -1,6 +1,7 @@
 import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 import challenges from '../../challenges.json';
 import { CountdownContext } from './CountdownContext';
+import { ToastContext } from './ToastContext';
 
 interface Challenge {
   type: 'body' | 'eye';
@@ -27,16 +28,14 @@ interface ChallengesProviderProps {
 export const ChallengesContext = createContext({} as ChallengesContextData);
 
 export function ChallengesProvider({ children }: ChallengesProviderProps) {
+  const { addToast } = useContext(ToastContext);
+
   const [level, setLevel] = useState(1);
   const [currentExp, setCurrentExp] = useState(0);
   const [completedChallenges, setCompletedChallenges] = useState(0);
   const [activeChallenge, setActiveChallenge] = useState(null);
 
   const expToNextLevel = Math.pow((level + 1) * 4, 2);
-
-  // useEffect(() => {
-  //   Notification.requestPermission();
-  // }, []);
 
   function levelUp(){
     setLevel(level + 1);
@@ -50,11 +49,11 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
 
     new Audio('/notification.mp3').play();
 
-    // if(Notification.permission === 'granted') {
-    //   new Notification('Novo desafio', {
-    //     body: `Valendo ${challenge.amount}xp!`
-    //   })
-    // }
+    addToast({
+      type: 'info',
+      title: 'Hora de exercitar-se!',
+      description: 'Leia o desafio para realizar os exercícios'
+    });
   }
 
   function resetChallenge() {
