@@ -7,6 +7,7 @@
 :root {
   --white: #fff;
   --border: #f0f1f3;
+  --bottom: #d7d8da;
   --button-text: #fff;
   --background: #F2F3F5;
   --gray-line: #DCDDE0;
@@ -25,11 +26,12 @@
   --white: #1f1b24;
   --button-text: #fff;
   --border: #121212;
+  --bottom: #666666;
   --background: #121212;
-  --gray-line: #DCDDE0;
+  --gray-line: #666666;
   --text: #666666;
   --text-highlight: #B3B9FF;
-  --title: #f2f3f5;
+  --title: #B3B9FF;
   --red: #E83F5B;
   --red-dark: #d03851;
   --green: #4CD62B;
