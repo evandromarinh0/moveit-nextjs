@@ -6,11 +6,30 @@
 
 :root {
   --white: #fff;
+  --border: #f0f1f3;
+  --button-text: #fff;
   --background: #F2F3F5;
   --gray-line: #DCDDE0;
   --text: #666666;
   --text-highlight: #B3B9FF;
   --title: #2E384D;
+  --red: #E83F5B;
+  --red-dark: #d03851;
+  --green: #4CD62B;
+  --blue: #5965E0;
+  --blue-dark: #4953B8;
+  --blue-twitter: #2aa9E0;
+}
+
+[data-theme='dark'] {
+  --white: #1f1b24;
+  --button-text: #fff;
+  --border: #121212;
+  --background: #121212;
+  --gray-line: #DCDDE0;
+  --text: #666666;
+  --text-highlight: #B3B9FF;
+  --title: #f2f3f5;
   --red: #E83F5B;
   --red-dark: #d03851;
   --green: #4CD62B;

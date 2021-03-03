@@ -13,6 +13,7 @@ import { ChallengesProvider } from '../hooks/ChallengesContext';
 
 import styles from '../styles/pages/Home.module.css';
 import { LoginForm } from '../components/LoginForm';
+import { ThemeSwitcher } from '../components/ThemeSwitcher';
 
 interface HomeProps {
   level: number;
@@ -41,6 +42,7 @@ export default function Home(props: HomeProps) {
           </Head>
 
           <ExperienceBar />
+          <ThemeSwitcher />
 
           <CountdownProvider>
             <section>
