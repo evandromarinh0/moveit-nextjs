@@ -32,7 +32,7 @@ export function LoginForm() {
         <title>Login | Github</title>
       </Head>
       <section className={styles.container}>
-        <div>
+        <div className={styles.background}>
           <img src="icons/background-logo.svg" alt="Background"/>
         </div>
         <div className={styles.content}>

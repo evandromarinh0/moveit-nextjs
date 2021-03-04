@@ -4,6 +4,7 @@
   background: #5965E0;
   display: flex;
   align-items: center;
+  
 }
 
 .content {
@@ -62,4 +63,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 990px) {
+  .background {
+    display: none;
+  }
 }

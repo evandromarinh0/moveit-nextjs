@@ -3,3 +3,10 @@
   left: 50%;
   bottom: 2%;
 }
+
+@media (max-width: 720px) {
+  .container {
+    top: 15%;
+    left: 80%;
+  }
+}
