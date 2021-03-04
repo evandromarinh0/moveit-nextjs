@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="./.github/logo-full.svg" alt="Move It" width="300"/>
+   <img src="./moveit-next/.github/logo-full.svg" alt="Move It" width="300" />
 </p>
 <p align="center">	
 
@@ -14,9 +14,9 @@
 
 # Screenshots :camera:
 <div align="center">
-  <img src="./.github/moveit-home.png" width="300px">
-  <img src="./.github/dark-theme.png" width="300px">
-  <img src="./.github/light-theme.png" width="300px">
+  <img src="./moveit-next/.github/moveit-home.png" width="300px">
+  <img src="./moveit-next/.github/dark-theme.png" width="300px">
+  <img src="./moveit-next/.github/light-theme.png" width="300px">
 </div>
 
 # Technologies :rocket:
